@@ -1,0 +1,98 @@
+@import "rsuite/dist/rsuite.css";
+.tab-container {
+  padding: 0 !important;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.dashboard-container.campaing-manger .filer-container {
+  position: relative;
+  padding: 0 30px;
+  margin-top: 0px !important;
+}
+
+.column-link-container .dropdown-container {
+  min-width: 300px;
+}
+
+.global-filter {
+  width: 500px;
+}
+.vertical-top {
+  vertical-align: top;
+}
+
+.cus-dropdown .dropdown-container.open {
+  display: block;
+}
+
+.btn {
+  font-size: 14px !important;
+}
+.rs-calendar-table-cell-disabled > div > span {
+  color: #aaaaaa;
+}
+.rs-picker-has-value .rs-btn .rs-picker-toggle-value,
+.rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+  color: #6b7380;
+}
+.dollar-text {
+  background-color: #f3f4f6;
+  left: 1px;
+  top: 1.5px;
+  height: 38px;
+  border-radius: 3px 0px 0px 3px;
+  width: 35px;
+  border: 1px solid #f3f4f6;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.dollar-text-end {
+  background-color: #f3f4f6;
+  right: 0.5px;
+  top: 1.5px;
+  height: 38px;
+  border-radius: 0px 3px 3px 0px;
+  width: 35px;
+  border: 1px solid #f3f4f6;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.datesincustom {
+  height: 10px;
+  margin-top: -70px;
+  margin-left: 250px;
+}
+.datesincustoms {
+  height: 10px;
+  width: 200px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.profile {
+  position: absolute;
+  top: 18px;
+  left: 80px;
+  z-index: 10 !important;
+  position: fixed;
+}
+.profile2 {
+  position: absolute;
+  top: -43px;
+  left: 20px;
+  z-index: 10 !important;
+}
+.secondary {
+  background-color: white !important;
+  color: black !important;
+  height: 38px !important;
+}
+.page-title {
+  font-family: "Plus Jakarta Sans";
+  font-size: 10px;
+  color: #6B7280;
+}

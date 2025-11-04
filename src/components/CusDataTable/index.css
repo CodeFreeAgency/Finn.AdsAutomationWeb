@@ -1,0 +1,344 @@
+.MuiDataGrid-root {
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+.MuiDataGrid-columnHeaders {
+  color: #111827;
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  background: #f9fafb;
+}
+.MuiDataGrid-row {
+  max-height: 200px !important;
+}
+.MuiDataGrid-row:not(.MuiDataGrid-row--dynamicHeight) > .MuiDataGrid-cell {
+  max-height: 200px !important;
+  font-size: 14px;
+}
+
+.bulk-operations {
+  width: 250px;
+  margin: 10px 30px;
+  position: relative;
+  border-radius: 4px;
+  border: 1px #e5e7eb solid;
+  padding: 5px 10px;
+  height: 40px;
+}
+.bulk-operations .cus-dropdown {
+  height: 40px;
+}
+.bulk-operations span {
+  color: #9ca3af;
+  font-size: 14px;
+}
+.bulk-operations .down-arrow-right {
+  right: 5px;
+}
+.bulk-operations .cus-dropdown i {
+  position: absolute;
+  right: 12px !important;
+  top: 12px;
+}
+.bulk-operations .cus-dropdown .dropdown-container {
+  min-width: 450px;
+  top: 39px;
+  right: auto;
+  left: 0px;
+}
+.bulk-operations .cus-dropdown .dropdown-container .nav-pills .nav-link {
+  color: #111827 !important;
+  font-size: 14px !important;
+  padding: 10px;
+  border: 1px #f9fafb solid !important;
+  margin: 5px 0;
+}
+.bulk-operations .cus-dropdown .dropdown-container .nav-pills .nav-link.active,
+.bulk-operations
+  .cus-dropdown
+  .dropdown-container
+  .nav-pills
+  .show
+  > .nav-link {
+  background-color: #f9fafb !important;
+  border-radius: 4px 0 0 4px;
+}
+
+.bulk-operations .cus-dropdown .dropdown-container .tab-content {
+  background-color: #f9fafb;
+  min-height: 50px !important;
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
+}
+.bulk-operations .cus-dropdown .dropdown-container .tab-content label {
+  font-size: 12px;
+}
+.bookself-product-column {
+  display: flex;
+}
+.product-column-content {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 10px;
+  max-width: 150px;
+}
+.product-column-title {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  padding-top: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-column-content p {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+.bookshelf-bookcover img {
+  width: 35px;
+}
+.bookself-product-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bookself-product-tags .add-tag {
+  margin: 2px;
+  border: 1px solid #00976d;
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #00976d;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.bookself-product-tags .tags {
+  margin: 2px;
+  background-color: #eaffec;
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #00976d;
+}
+.bookself-product-tags .tags i {
+  cursor: pointer;
+  padding: 4px;
+  background-image: url("../../assets/images/icons/x-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5px;
+}
+.bsr-tag-container {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+}
+.bsr-tag-container .bsr-tags {
+  width: 100%;
+}
+.bsr-tag-container .bsr-tags u {
+  color: #00976d;
+}
+.bsr-tag-container .view-all {
+  border-radius: 4px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  height: 0 !important;
+}
+.addTagModel {
+  /* width: 300px !important; */
+  border-radius: 4 !important;
+  padding: 10px;
+  margin-top: 60%;
+}
+.addTagModels {
+  /* width: 300px !important; */
+  border-radius: 4 !important;
+  padding: 10px;
+  margin-top: 20%;
+}
+.addTagBtn {
+  width: 50%;
+}
+.addTagInputContainer {
+  padding: 25px;
+}
+.addTagBtnContainer {
+  margin-top: 2rem !important;
+  display: flex;
+  justify-content: space-between;
+}
+.addTagModelContainers h4 {
+  font-family: Plus Jakarta Sans;
+  font-size: 18;
+  font-weight: 600;
+}
+
+.addTagModelContainers input {
+  height: 35px !important;
+}
+
+.addTagModelContainers input::placeholder {
+  font-family: Plus Jakarta Sans;
+  font-size: 12px;
+  font-weight: 400;
+  color: #9ca3af;
+}
+.addTagBtnContainer button:first-child {
+  width: 220px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #46ac8d;
+  background-color: white;
+  color: #46ac8d;
+}
+.addTagBtnContainer button:last-child {
+  width: 220px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #46ac8d;
+  background-color: #46ac8d;
+  color: #ffffff;
+}
+.addTagModelContainers p {
+  font-family: Plus Jakarta Sans;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.col-action-container {
+  cursor: pointer;
+  width: 100%;
+}
+.col-action-container .dropdown-menu {
+  width: 160px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 0px;
+  box-shadow: 0px 0px 5px #ccc;
+}
+.col-action-container .dropdown-menu li {
+  height: 44px;
+  border-bottom: 1px solid #f3f4f6;
+}
+.col-action-container .dropdown-menu li p,
+.col-action-container .dropdown-menu li a {
+  margin-bottom: 0px;
+  font-size: 14px !important;
+  color: #4b5563 !important;
+  line-height: 35px;
+  text-decoration: none;
+}
+.col-action-container .dropdown-menu li p.dropdown-item.text-red {
+  color: #ff0000 !important;
+}
+
+.col-action-container .dropdown-menu li p.dropdown-item.active,
+.col-action-container .dropdown-menu li p.dropdown-item:active {
+  background-color: none !important;
+  color: #fff !important;
+}
+
+.change-log-table-container
+  .MuiDataGrid-columnHeaderTitleContainerContent
+  .MuiDataGrid-columnHeaderTitle,
+.change-log-table-container
+  .MuiDataGrid-columnHeaderTitleContainerContent
+  .title-group {
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: #6b7280;
+}
+.change-log-table-container
+  .MuiDataGrid-columnHeaderTitleContainerContent
+  .title-group
+  span {
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #9ca3af;
+}
+.MuiDataGrid-row .MuiDataGrid-cell--withRenderer .changed-value {
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00976d;
+}
+.MuiDataGrid-row .MuiDataGrid-cell--withRenderer .history-value {
+  font-family: Plus Jakarta Sans;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #9ca3af;
+}
+.col-action-container .undo-action-icon {
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00976d;
+}
+
+.custom-ui {
+  width: 450px;
+}
+.logo-del-tag {
+  text-align: center;
+}
+.h1 {
+  font-size: 24px;
+  font-weight: 600;
+  background: #111827;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttons-container button:nth-child(1) {
+  width: 48%;
+  height: 40px;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 4px;
+  border: 1px solid #00d26e;
+  background-color: #fff;
+  color: #00d26e;
+}
+.buttons-container button:nth-child(2) {
+  width: 48%;
+  height: 40px;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 4px;
+  border: 1px solid #00d26e;
+  background-color: #00d26e;
+  color: #fff;
+}
+.custom-ui h1 {
+  font-size: 24px !important;
+}
+.react-confirm-alert {
+  background-color: #fff;
+  padding: 23px;
+  border: 1px solid lightgrey;
+}
+.delete-tag-button {
+  background-color: transparent;
+}

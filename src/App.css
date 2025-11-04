@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.is-invalid {
+  color: red;
+  background-color: #f8d7da; /* Optional: Set a background color for the error field */
+  font-size: 14px; /* Optional: Adjust the font size of the error message */
+  /* Add any other desired CSS properties */
+}
+
+.App-link {
+  color: #61dafb;
+}
+#add{
+  color: white !important;
+  height: 20px !important;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

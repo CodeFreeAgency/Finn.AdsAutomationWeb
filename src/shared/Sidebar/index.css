@@ -1,0 +1,174 @@
+.sidebar {
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh !important;
+  overflow: hidden;
+  width: 70px;
+  z-index: 1500;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.sidebar:hover,
+.sidebar.open {
+  width: 260px;
+}
+
+.sidebar .header-wrapper .brand-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 10px 0; /* reduced bottom padding */
+}
+
+.sidebar .brand-logo {
+  width: 45px;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar:hover .brand-logo,
+.sidebar.open .brand-logo {
+  width: 150px;
+}
+
+/* === MENU AREA === */
+.menus {
+  padding-left: 0px;
+  margin-top: 15%; /* reduced space between logo and menus */
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-items {
+  padding: 8px 10px;
+  margin: 5px 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none !important;
+}
+
+.menu-items a {
+  display: flex;
+  align-items: center;
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+.menu-items a:hover {
+  text-decoration: none !important;
+}
+
+.menu-items i {
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 15px;
+}
+
+/* Hover and Active states */
+.menu-items:hover,
+.menu-items:focus,
+.menu-items.active {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+}
+
+/* Icon color adjustments */
+.sidebar .menu-items a span {
+  display: none;
+  color: #fff !important;
+}
+
+.sidebar:hover .menu-items a span,
+.sidebar.open .menu-items a span {
+  display: inline-flex;
+}
+
+/* === SUBMENU === */
+
+.sidebar .submenu-dropdown {
+  display: none;
+  padding-left: 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar:hover .submenu-dropdown.open,
+.sidebar.open .submenu-dropdown.open {
+  display: block;
+}
+
+.sidebar .submenu-dropdown .menu-items {
+  border-left: 1px #00d1ff solid;
+  border-radius: 0;
+  padding: 5px 0px;
+  padding-left: 30px;
+  list-style: none;
+  background-color: transparent; 
+}
+
+/* submenu link text default white */
+.sidebar .submenu-dropdown .menu-items a span {
+  font-size: 14px;
+  color: #ffffff !important; 
+}
+
+/* hover effect – change bg to white, text to black */
+.sidebar .submenu-dropdown .menu-items:hover,
+.sidebar .submenu-dropdown .menu-items:focus,
+.sidebar .submenu-dropdown .menu-items.active {
+  background-color: #ffffff !important;
+  border-radius: 0 8px 8px 0;
+}
+
+.sidebar .submenu-dropdown .menu-items:hover a span,
+.sidebar .submenu-dropdown .menu-items.active a span {
+  color: #000 !important;
+}
+
+
+/* Arrow indicator (old style restored) */
+.sidebar:hover .has-submenu,
+.sidebar.open .has-submenu {
+  background-image: url("../../assets/images/down-arrow.svg");
+  background-position: right 10px top 20px;
+  background-repeat: no-repeat;
+}
+
+/* Smooth transition for submenu arrows and hover */
+.menu-items,
+.menu-items a span,
+.brand-logo {
+  transition: all 0.3s ease-in-out;
+}
+
+/* === ICONS === */
+.menu-items .dashboard-icon {
+  background-image: url("../../assets/images/icons/dashboard.svg");
+}
+.menu-items:hover .dashboard-icon,
+.menu-items:focus .dashboard-icon,
+.menu-items.active .dashboard-icon {
+  background-image: url("../../assets/images/icons/dashboard-active.svg");
+}
+
+.menu-items .ads-status-icon {
+  background-image: url("../../assets/images/icons/ads.svg");
+}
+.menu-items:hover .ads-status-icon,
+.menu-items:focus .ads-status-icon,
+.menu-items.active .ads-status-icon {
+  background-image: url("../../assets/images/icons/ads-active.svg");
+}
+
+.menu-items .resources-icon {
+  background-image: url("../../assets/images/icons/resources.svg");
+}
+.menu-items:hover .resources-icon,
+.menu-items:focus .resources-icon,
+.menu-items.active .resources-icon {
+  background-image: url("../../assets/images/icons/resources-active.svg");
+}

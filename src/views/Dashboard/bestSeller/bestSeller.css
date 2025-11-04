@@ -1,0 +1,17 @@
+.top-seller-widget img {
+  border-radius: 4px;
+  height: 155px;
+  width: inherit;
+}
+p + p {
+  margin-top: 0 !important;
+}
+.bestSellerLoading{
+height: 200px !important;
+}
+.bestSellerLoading .loading-text{
+font-size: 10px !important;
+}
+.bestSellerLoading .loading-text .logicon img{
+width: 20px !important;
+}

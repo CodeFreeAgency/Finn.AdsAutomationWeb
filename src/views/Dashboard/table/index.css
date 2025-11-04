@@ -1,0 +1,113 @@
+.MuiDataGrid-root{
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+.MuiDataGrid-columnHeaders{
+  color: #111827;
+  font-size: 12px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  background: #F9FAFB;
+}
+.css-t89xny-MuiDataGrid-columnHeaderTitle{
+  font-weight: 600 !important;
+}
+
+.css-1lymaxv-MuiDataGrid-root{
+  font-size: 12px !important;
+  border: none !important;
+}
+.bulk-operations{
+  width: 200px;
+  margin: 0px;
+  position: relative;
+  border-radius: 4px;
+  border: 1px #E5E7EB solid;
+  padding: 5px 10px;
+  height: 40px;
+}
+.bulk-operations .cus-dropdown{
+  height: 40px;
+}
+.bulk-operations span{
+  color: #9CA3AF;
+  font-size: 14px;
+  width: 100px;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+.bulk-operations .down-arrow-right{
+  right: 5px;
+}
+.bulk-operations .cus-dropdown .dropdown-container{
+  min-width: 450px;
+  top: 39px;
+  right: auto;
+  left: 0px;
+}
+.bulk-operations .cus-dropdown .dropdown-container .nav-pills .nav-link{
+  color: #111827 !important;
+  font-size: 14px !important;
+  padding: 10px;
+  border: 1px #f9fafb solid !important;
+  margin: 5px 0;
+}
+.bulk-operations .cus-dropdown .dropdown-container .nav-pills .nav-link.active, 
+.bulk-operations .cus-dropdown .dropdown-container .nav-pills .show>.nav-link{
+  background-color: #f9fafb !important;
+  border-radius: 4px 0 0 4px;
+}
+
+.bulk-operations .cus-dropdown .dropdown-container .tab-content{
+  background-color: #f9fafb;
+  min-height: 50px !important;
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
+}
+.bulk-operations .cus-dropdown .dropdown-container .tab-content label{
+  font-size: 12px;
+}
+.status{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 5px;
+  margin: auto;
+}
+.status.Enabled{
+  background-color: #4a986e;
+}
+.status.Paused{
+  background-color: #009cd9;
+}
+.status.Archived{
+  background-color: #d5d900;
+}
+
+.table-sub-label{
+  padding-left: 15px;
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 120px;
+  float: left;
+}
+.dashboardTable-container  .tab-content{
+  margin-top: -28px !important;  
+
+}
+.dashboardTable-container .filter-container{
+  margin-top: -29px !important;
+  padding-top: 5px;
+}
+.dashboardTable-container .search-filter-container{
+  margin-top: 8px;
+}
+.dashboardTable-container .search-filter-container input{
+  height: 35px;
+}
+.dashboardTable-container .table-footer-left{
+  margin-left: 0.5rem;
+}

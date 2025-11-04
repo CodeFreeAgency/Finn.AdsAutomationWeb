@@ -1,0 +1,46 @@
+.finn-search-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.search-input {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  resize: none;
+  min-height: 120px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.search-btn {
+  min-width: 120px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+/* Scrollable results container */
+.finn-results-container {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: #fff;
+  max-height: 400px;
+  overflow-y: auto; /* ✅ scrollable for long responses */
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.result-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}

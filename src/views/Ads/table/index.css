@@ -1,0 +1,522 @@
+.MuiDataGrid-root {
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+.MuiDataGrid-columnHeaders {
+  color: #111827;
+  font-size: 15px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  background: #f9fafb;
+}
+.css-t89xny-MuiDataGrid-columnHeaderTitle {
+  font-weight: 600 !important;
+}
+
+.css-1lymaxv-MuiDataGrid-root {
+  font-size: 15px !important;
+}
+.bulk-operations {
+  width: 200px;
+  margin: 0px;
+  position: relative;
+  border-radius: 4px;
+  border: 1px #e5e7eb solid;
+  padding: 5px 10px;
+  height: 40px;
+}
+.bulk-operations .bulk-opertion-btn-dropdown {
+  height: 40px;
+  margin-left: -10px;
+  margin-top: -22px;
+}
+.bulk-operations span {
+  color: #9ca3af;
+  font-size: 14px;
+  width: 100px;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+.bulk-operations .down-arrow-right {
+  right: 5px;
+}
+.bulk-operations .bulk-opertion-btn-dropdown .dropdown-container {
+  min-width: 450px;
+  top: 39px;
+  right: auto;
+  left: 0px;
+}
+.bulk-operations .bulk-opertion-btn-dropdown .dropdown-container .nav-pills .nav-link {
+  color: #111827 !important;
+  font-size: 14px !important;
+  padding: 10px;
+  border: 1px #f9fafb solid !important;
+  margin: 5px 0;
+}
+.bulk-operations .bulk-opertion-btn-dropdown .dropdown-container .nav-pills .nav-link.active,
+.bulk-operations
+  .bulk-opertion-btn-dropdown
+  .dropdown-container
+  .nav-pills
+  .show
+  > .nav-link {
+  background-color: #f9fafb !important;
+  border-radius: 4px 0 0 4px;
+}
+
+.bulk-operations .bulk-opertion-btn-dropdown .dropdown-container .tab-content {
+  background-color: #f9fafb;
+  min-height: 50px !important;
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
+}
+.bulk-operations .bulk-opertion-btn-dropdown .dropdown-container .tab-content label {
+  font-size: 12px;
+}
+.status {
+  width: 12px !important;
+  height: 12px !important;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 5px;
+  margin: auto;
+}
+.status.Enabled {
+  width: 12px !important;
+  height: 12px !important;
+  background-color:rgb(5, 196, 5)
+}
+.status.Paused  {
+  width: 12px !important;
+  height: 12px !important;
+  background-color:#FE9900;
+}
+.status.Archived  {
+  background-color: #d5d900;
+}
+ .status.ENABLED {
+  width: 12px !important;
+  height: 12px !important;
+  background-color:rgb(5, 196, 5)
+}
+.status.PAUSED {
+  width: 12px !important;
+  height: 12px !important;
+  background-color:#FE9900;
+}
+.status.ARCHIVED{
+  background-color: #d5d900;
+}
+
+/* Flags */
+i.flag-US {
+  background-image: url("../../../assets/flags/US.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  padding: 15px;
+  background-size: 100%;
+  margin: auto;
+}
+i.flag-CA {
+  background-image: url("../../../assets/flags/CA.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  padding: 15px;
+  background-size: 100%;
+  margin: auto;
+}
+i.flag-GB {
+  background-image: url("../../../assets/flags/GB.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  padding: 15px;
+  background-size: 100%;
+  margin: auto;
+}
+i.flag-DE {
+  background-image: url("../../../assets/flags/DE.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  padding: 15px;
+  background-size: 100%;
+  margin: auto;
+}
+i.flag-IT {
+  background-image: url("../../../assets/flags/IT.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  padding: 15px;
+  background-size: 100%;
+  margin: auto;
+}
+i.flag-AU {
+  background-image: url("../../../assets/flags/AU.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  padding: 15px;
+  background-size: 100%;
+  margin: auto;
+}
+
+.table-sub-label {
+  padding-left: 15px;
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 120px;
+  float: left;
+}
+
+/* Ads creation */
+.check {
+  transform: translateX(-1320px);
+}
+.checks {
+  transform: translateX(-1300px) translateY(8px);
+}
+.book-container {
+  display: flex;
+}
+
+.book-container label {
+  display: flex;
+  align-items: center;
+}
+.mt-3-bookads {
+  transform: translateX(-15px);
+}
+.book-info {
+  margin-left: 20px; /* Adjust as needed */
+}
+
+.scrollable-cards1 {
+  width: 98%; /* Set your desired width */
+  transform: translateX(30px);
+}
+.book-title {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.book-author {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.book-tags {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(-20px);
+  margin-left: 200px;
+}
+
+.specific-div {
+  font-size: 15px;
+  height: 30px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color:black;
+  border: 1px solid black;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Add a gap between items */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.book-tags div:hover {
+  border-color:black; /* Change the border color on hover */
+  background-color: white;
+}
+
+.tag-remove {
+  margin-left: 5px;
+  cursor: pointer;
+}
+/* Add this CSS to your stylesheet or component */
+
+img {
+  max-width: 100px; /* Adjust the max-width as needed */
+  max-height: 150px; /* Adjust the max-height as needed */
+}
+
+/* Hide the default toggle button */
+#dropdown-basic-toggle {
+  display: none;
+}
+
+/* Style the image as the dropdown trigger */
+#dropdown-basic img {
+  cursor: pointer;
+  padding: 5px; /* Optional: Add padding to the image */
+  /* Add any other styling you need for the image */
+}
+
+#dropdown-basic1 img {
+  cursor: pointer;
+  padding: 5px; /* Optional: Add padding to the image */
+  /* Add any other styling you need for the image */
+}
+.threedot {
+  width: 30px;
+  transform: translateX(-10px);
+}
+.boxcontent1 {
+  transform: translateY(-103px);
+}
+.boxcontent {
+  transform: translateY(-53px);
+}
+
+#dropdown-basic {
+  transform: translateX(1105px) translateY(-30px);
+  width: 40px;
+  align-items: center;
+  background-color: white;
+}
+#dropdown-basic1 {
+  transform: translateX(1240px) translateY(-30px);
+  width: 40px;
+  align-items: center;
+  background-color: white;
+}
+.buttoncreate {
+  background-color:white;
+  color: #000000;
+  border:1px solid black;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 89%; /* Align to the right end */
+  transform: translateY(-75px);
+}
+.buttoncreates {
+  background-color: white;
+  color: #000000;
+   border:1px solid black;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 87%; /* Align to the right end */
+  transform: translateY(-75px);
+}
+.tag {
+  text-align: center;
+  font-size: 13px;
+  padding: 2px;
+  height: 23px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.book-tags .specific-div {
+  background-color: transparent; /* Set background color to transparent */
+  border: none;
+  padding: 0;
+}
+.books {
+  transform: translateY(20px);
+}
+/* Add hover effect if desired */
+.buttoncreate:hover {
+  background-color: black;
+}
+.book-tags {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+.country-selector {
+  display: flex;
+  width: 900px;
+}
+.country-option {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  margin-right: 10px; /* Adjust spacing between options */
+}
+
+.country-option:hover {
+  border-color: black; /* Green underline on hover, adjust as needed */
+}
+
+.country-option.active {
+  border-color:black; /* Green underline for the selected country */
+  font-weight: bold; /* Optional: Make the selected text bold */
+}
+.imageContainer > img {
+  width: 10px;
+}
+.country-option {
+  display: flex;
+  align-items: center;
+}
+
+.country-option img {
+  width: 16px; /* Adjust the width as needed */
+  height: 16px; /* Adjust the height as needed */
+  margin-right: 5px; /* Adjust the margin as needed */
+}
+.content {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 15px;
+}
+.advertiseimage {
+  color:black;
+}
+.content img {
+  width: 20px;
+  background-color: white;
+}
+
+.aligncards {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: small;
+  margin-left: 30px;
+}
+.aligncampaign {
+  font-size: small;
+  margin-bottom: 3px;
+}
+.align2 {
+  font-size: small;
+  margin-bottom: 3px;
+}
+.align4 {
+  width: 20px;
+}
+.sixdots {
+  width: 20px;
+}
+.align22 {
+  width: 30px;
+  margin-right: -19px;
+}
+.align3 {
+  width: 30px;
+  margin-right: -19px;
+}
+.removebutton {
+  background-color: white;
+}
+/* CardStyles.css */
+
+/* CardStyles.css */
+
+.card-with-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #fff; /* Replace #fff with your desired border color */
+  max-height: 200px; /* Set a maximum height for the card */
+  align-items: center;
+  margin-top: 10px;
+}
+.Cardsbackground {
+  background-color: #ececec;
+}
+
+.scrollable-cards {
+  max-height: 200px; /* Adjust the height as needed */
+  overflow-y: auto;
+  margin-top: 130px;
+}
+.scrollable-cards1 {
+  max-height: 200px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+.scrollable-cards::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+.scrollable-cards::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Optional: Round the corners of the thumb */
+}
+
+.scrollable-cards::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the color of the scrollbar track */
+}
+
+.scrollable-cards1::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the color of the scrollbar track */
+}
+
+.scrollable-cards1::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+.scrollable-cards1::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Optional: Round the corners of the thumb */
+}
+
+.scrollable-cards1::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the color of the scrollbar track */
+}
+.main-cont-header {
+  margin-top: 10px;
+}
+
+.filter-column-background {
+  background-color: red !important;
+}
+.white-column-background {
+  background-color: white !important;
+}
+.filter-box{
+  border:1px solid #F3F4F6 ;
+  padding: 10px;
+}
+.filter-content{
+  font-size: 13px;
+  border:1px solid #d4d4d6 ;
+  padding: 5px;
+  background-color:  #F3F4F6;
+  border-radius: 5px;
+}
+.MuiSvgIcon-root{
+  width: 20px !important;
+  height: 18px !important;
+}
+.clear-filter{
+  cursor: pointer;
+}
+.clear-filter:hover{
+
+  color: black !important;
+}
+.status {
+  width: 12px !important;
+  height: 12px !important;
+  display: inline-block; /* Ensure the element is properly sized */
+}
+
+.status.ENABLED {
+  background-color: rgb(5, 196, 5);
+}
+
+.status.PAUSED {
+  background-color: #FE9900;
+}
+
+.status.ARCHIVED {
+  background-color: #d5d900;
+}

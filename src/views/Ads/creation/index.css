@@ -1,0 +1,442 @@
+.overflow-ellipse {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ads-creation-list-container {
+    padding-top: 10px;
+}
+
+.popup-custom-box ul li {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ads-creation-list-container-left .ads-content-row {
+    display: inline-flex;
+}
+
+.ads-creation-list-container-left .ads-content-row .product-details {
+    display: inline-flex;
+}
+
+.ads-creation-list-container-left .ads-content-row .product-details .product-details-img {
+    padding: 0 5px;
+}
+
+.ads-creation-list-container-left .ads-content-row .product-details .product-details-img img {
+    max-width: 100%;
+}
+
+.ads-creation-list-container-left .ads-content-row .product-details .product-details-cont {
+    padding: 0 10px;
+}
+
+.ads-creation-list-container-left .ads-content-row .product-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111827;
+    font-family: Plus Jakarta Sans;
+    max-width: 225px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ads-creation-list-container-left .ads-content-row .product-subtitle {
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+}
+
+.ads-creation-list-container-left .ads-content-row .product-subtitle .bullet-point {
+    margin-left: 20px;
+}
+
+.ads-creation-list-container-right {
+    display: flex;
+}
+
+.ads-creation-list-container-right .three-dot {
+    width: 30px;
+    cursor: pointer;
+}
+
+.ads-container-row .tab ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ads-container-row .tab ul li {
+    padding: 0 15px 10px 15px;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.ads-container-row .tab ul li.active {
+    border-bottom: 1px #00976d solid;
+    color: #00976d;
+}
+
+.ads-container-row .tab ul li i {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.ads-container-row .tab ul li.advertise-anywhere {
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 500;
+    color: #00976d;
+}
+
+.ads-container-row .tab .ads-rules-list-container {
+    padding: 15px 30px;
+    background-color: #f3f4f6;
+    max-height: 150px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.ads-container-row .tab .ads-rules-list-container>div {
+    display: none;
+}
+
+.ads-container-row .tab .ads-rules-list-container>div.active {
+    display: block;
+}
+
+.accordion-item.rules-list-item {
+    background: transparent;
+}
+
+.ads-container-row .tab .ads-rules-list-container .rules-list-item .rules-list-item-summary {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    position: relative;
+}
+
+.ads-container-row .tab .ads-rules-list-container .rules-list-item .rules-list-item-summary div {
+    padding: 5px 10px;
+}
+
+.ads-container-row .tab .ads-rules-list-container .rules-list-item .rules-list-item-summary .rule-title-name {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+}
+
+.ads-container-row .tab .ads-rules-list-container .rules-list-item .rules-list-item-summary .down-arrow {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.ads-container-row .tab .ads-rules-list-container .rules-list-item .rules-list-item-details {
+    background-color: #ffffff;
+    padding: 15px;
+    position: relative;
+    margin-top: 3px;
+}
+
+.ads-container-row .tab .ads-rules-list-container .rules-list-item .rules-list-item-details .edit-link {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.ads-container-row .tab .ads-rules-list-container .rules-list-item .rules-list-item-details h6 {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.ads-container-row .tab .ads-rules-list-container .rules-list-item .rules-list-item-details p {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: #111827;
+}
+
+.createAdsModel .create-ads-modal-radio {
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 4px !important;
+    height: 50px !important;
+    color: #171717 !important;
+    padding-top: 10px;
+}
+
+.createAdsModel .create-ads-modal-radio .radio-icon {
+    background-image: url("../../../assets/images/icons/radio-inactive.svg");
+    background-repeat: no-repeat;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.createAdsModel .create-ads-modal-radio:hover,
+.createAdsModel .create-ads-modal-radio.selected {
+    border-color: #00d26e;
+    background-color: #eaffec;
+}
+
+.createAdsModel .create-ads-modal-radio:hover .radio-icon,
+.createAdsModel .create-ads-modal-radio.selected .radio-icon {
+    background-image: url("../../../assets/images/icons/radio-active.svg");
+}
+
+.createCampaindBtnContainer a {
+    text-decoration: none;
+    font-size: 16px !important;
+    line-height: 2.2;
+}
+
+.create-campaign-container p a {
+    position: relative;
+    cursor: pointer;
+}
+
+.create-campaign-container>h5 {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.create-campaign-container>p {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.create-campaign-container>p a {
+    font-weight: 400;
+    text-decoration: underline;
+    color: #00976d;
+}
+
+.create-campaing-form .form-group {
+    padding-bottom: 15px;
+}
+
+.create-campaing-form label {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.create-campaing-form input[type="text"] {
+    height: 40px;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.create-campaing-form .added-groups-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.create-campaing-form .added-groups-list div {
+    margin: 10px 10px 10px 0px;
+    height: 40px;
+    background-color: #f3f4f6;
+    border-radius: 4px;
+    padding: 7px 5px 5px 10px;
+    font-size: 16px;
+}
+
+.create-campaing-form .btn-outline {
+    background-color: transparent;
+    border: 1px solid #00976d;
+    color: #00976d !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+label.form-check-label {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-button-group {
+    padding: 0 30px;
+    text-align: right;
+}
+
+.form-button-group button {
+    margin-left: 20px;
+    min-width: 100px;
+    height: 40px !important;
+}
+
+.form-button-group button.btn-outline-primary {
+    border-color: #00d26e;
+}
+
+.createAdsModel.open {
+    display: block !important;
+}
+
+.add-keyword-container {
+    position: relative;
+}
+
+.add-keyword-container textarea {
+    height: 150px !important;
+}
+
+.add-keyword-container .add-keyword-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    height: 30px;
+    border-radius: 3px;
+    border-color: #cafcd0;
+    background-color: #cafcd0;
+    color: #00976d !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 16px;
+}
+
+.create-campaing-form .table-responsive {
+    border: 1px #d1d5db solid;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.create-campaing-form table.table {
+    border: 0px;
+}
+
+.create-campaing-form table.table thead tr th {
+    border-bottom: 0px;
+    color: #9ca3af;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.create-campaing-form table.table tbody tr td {
+    border-bottom: 0px;
+    color: #111827;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+table.table tbody tr td.more-action i {
+    cursor: pointer;
+}
+
+.select-deselect-container {
+    position: relative;
+}
+
+.select-deselect-container .select-deselect-all {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-align: right;
+}
+
+.select-deselect-container .select-deselect-all span {
+    cursor: pointer;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00976d;
+    text-decoration: underline;
+}
+
+.remove-all-link span {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: right;
+    color: #00976d;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popup-custom-box {
+    position: absolute;
+    border-radius: 5px;
+    width: 225px;
+    background-color: rgba(17, 24, 39, 0.8);
+    color: #ffffff;
+    padding: 10px;
+    left: -100px;
+    top: 30px;
+    display: none;
+}
+
+.popup-custom-box p {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.popup-custom-box ul li {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.create-campaign-container p a:hover .popup-custom-box {
+    display: block;
+}
+
+
+/* ///-----------/// */
+
+.marketplaces-id {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.marketplace-item {
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+.flag-icons {
+    width: 20px;
+}
+
+.add-plus {
+    border: 0.5px solid #00976d;
+    border-radius: 50%;
+    padding: 0.1rem;
+}
