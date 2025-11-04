@@ -46,7 +46,7 @@ const Dashboard: React.FunctionComponent<ResultProps> = (props) => {
     setApiLoading(true);
     let userToken = localStorage.getItem("userToken");
     let AuthToken = "Bearer " + userToken;
-    let url = "http://18.207.111.239/BackgroundServices/Reports/All ";
+    let url = "https://18.207.111.239/BackgroundServices/Reports/All ";
    
     const requestOptions = {
       method: "POST",

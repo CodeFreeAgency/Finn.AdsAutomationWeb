@@ -20,7 +20,7 @@ let columns: GridColDef[] = [];
 
 function SearchTermsTable(props) {
   let apiEndPoint =
-    "http://18.207.111.239/Ads/SPCampaignManager/" +
+    "https://18.207.111.239/Ads/SPCampaignManager/" +
     props.tabName;
   let pageload = true;
   let currPage = 1;
@@ -224,7 +224,7 @@ function SearchTermsTable(props) {
       }
 
       const response = await fetch(
-        " http://18.207.111.239/Ads/SPCampaignManager/SearchTerms/Export",
+        " https://18.207.111.239/Ads/SPCampaignManager/SearchTerms/Export",
 
         {
           method: "POST",

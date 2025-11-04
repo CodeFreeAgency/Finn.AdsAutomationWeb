@@ -37,55 +37,47 @@ function ProductsTable(props) {
 
   const hiddenColumns = columFiltervalue;
 
-  useEffect(() => {
-    setMetaData(props.metaData);
-  }, [props.metaData]);
-
-  // 🧠 Automatically adjust height
-  useEffect(() => {
-    const handleResize = () => {
-      const windowHeight = window.innerHeight;
-      setGridHeight(Math.floor(windowHeight * 0.6));
-    };
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  // ⚡ When switching SP/SB/SD — reset & reload
-  useEffect(() => {
-    setRows([]);
-    setColumns([]);
-    setPageLoad(true);
-    if (props.selectedProfiles !== "SB") fetchData(); // ✅ skip SB as requested
-  }, [props.selectedProfiles]);
-
-  // ⚡ Load initially or when tab changes
-  useEffect(() => {
-    if (props.tabName && pageLoad && props.selectedProfiles !== "SB") {
-      fetchData();
-      setPageLoad(false);
+   useEffect(() => {
+    if (!props.selectedProfiles || !props.tabName) return;
+  
+    // Avoid triggering twice when filterDateRange changes locally
+    const isSameRange =
+      JSON.stringify(filterDateRange) === JSON.stringify(props.filterDateRange);
+  
+    if (!isSameRange) {
+      setFilterDateRange(props.filterDateRange);
     }
-  }, [props.tabName, props.selectedProfiles]);
-
-  // ⚡ Refresh when profile/date/filter changes
-  useEffect(() => {
-    if (props.condition && props.selectedProfiles && props.filterDateRange) {
-      if (filterDateRange !== props.filterDateRange) {
-        setFilterDateRange(props.filterDateRange);
-      }
-      if (props.selectedProfiles !== "SB") fetchData();
-    }
-  }, [props.condition, props.selectedProfiles, props.filterDateRange]);
+  
+    // Debounce or delay optional, but usually fine directly:
+    fetchData();
+  }, [props.selectedProfiles, props.tabName, props.condition, props.filterDateRange]);
+  
+  
+    useEffect(() => {
+      setMetaData(props.metaData);
+    }, [props.metaData]);
+  
+    // Adjust grid height dynamically
+    useEffect(() => {
+      const handleResize = () => {
+        const windowHeight = window.innerHeight;
+        const newHeight = Math.floor(windowHeight * 0.6);
+        setGridHeight(newHeight);
+      };
+      window.addEventListener("resize", handleResize);
+      handleResize();
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+  
 
   const fetchData = async () => {
     setApiLoading(true);
 
     let apiEndPoint = "";
     if (props.selectedProfiles === "SP") {
-      apiEndPoint = `http://18.207.111.239/Ads/SPCampaignManager/${props.tabName}`;
+      apiEndPoint = `https://18.207.111.239/Ads/SPCampaignManager/${props.tabName}`;
     } else if (props.selectedProfiles === "SD") {
-      apiEndPoint = `http://18.207.111.239/Ads/SDCampaignManager/${props.tabName}`;
+      apiEndPoint = `https://18.207.111.239/Ads/SDCampaignManager/${props.tabName}`;
     } else {
       // Skip SB
       setApiLoading(false);
@@ -230,9 +222,9 @@ function ProductsTable(props) {
 
       let apiEndPoint = "";
       if (props.selectedProfiles === "SP") {
-        apiEndPoint = `http://18.207.111.239/Ads/SPCampaignManager/${props.tabName}/Export`;
+        apiEndPoint = `https://18.207.111.239/Ads/SPCampaignManager/${props.tabName}/Export`;
       } else if (props.selectedProfiles === "SD") {
-        apiEndPoint = `http://18.207.111.239/Ads/SDCampaignManager/${props.tabName}/Export`;
+        apiEndPoint = `https://18.207.111.239/Ads/SDCampaignManager/${props.tabName}/Export`;
       } else {
         setSpinner(false);
         return;
