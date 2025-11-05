@@ -79,7 +79,7 @@ class AdsCompaignManager extends Component<ResultProps, State> {
       const userToken = localStorage.getItem("userToken");
       const AuthToken = "Bearer " + userToken;
 
-      const response = await fetch("https://finnapi.sellingpartnerservices.com/MasterData/meta", {
+      const response = await fetch("https://finnapi.sellingpartnerservice.com/MasterData/meta", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

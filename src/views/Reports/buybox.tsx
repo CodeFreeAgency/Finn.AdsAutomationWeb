@@ -51,7 +51,7 @@ function BuyBox(props: any) {
       let userToken = localStorage.getItem("userToken");
       let AuthToken = "Bearer " + userToken;
       let url =
-        "https://finnapi.sellingpartnerservices.com/SPAPIReports/GetInventory";
+        "https://finnapi.sellingpartnerservice.com/SPAPIReports/GetInventory";
 
       const requestOptions = {
         method: "POST",
@@ -195,7 +195,7 @@ function BuyBox(props: any) {
 
       let AuthToken = "Bearer " + userToken;
       let url2 =
-        "https://finnapi.sellingpartnerservices.com/SPAPIReports/Inventory/Export";
+        "https://finnapi.sellingpartnerservice.com/SPAPIReports/Inventory/Export";
 
       const requestOptions: RequestInit = {
         method: "POST",

@@ -79,7 +79,7 @@ class SignIn extends Component<{}, FormState> {
 
     try {
       const response = await fetch(
-        "https://finnapi.sellingpartnerservices.com/Users/Login",
+        "https://finnapi.sellingpartnerservice.com/Users/Login",
         {
           method: "POST",
           headers: {
