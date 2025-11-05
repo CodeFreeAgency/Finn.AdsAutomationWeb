@@ -56,7 +56,7 @@ function Sales(props) {
     let userToken = localStorage.getItem("userToken");
     let AuthToken = "Bearer " + userToken;
     let url =
-      "https://18.207.111.239/SPAPIReports/SalesAndTraffic/Report";
+      "https://finnapi.sellingpartnerservices.com/SPAPIReports/SalesAndTraffic/Report";
 
     const requestOptions = {
       method: "POST",
@@ -162,7 +162,7 @@ function Sales(props) {
     let userToken = localStorage.getItem("userToken");
     let AuthToken = "Bearer " + userToken;
     let url2 =
-      " https://18.207.111.239/SPAPIReports/SalesAndTraffic/Export";
+      " https://finnapi.sellingpartnerservices.com/SPAPIReports/SalesAndTraffic/Export";
     const requestOptions = {
       method: "POST",
       headers: {

@@ -75,11 +75,11 @@ function TargetingTable(props) {
 
     let apiEndPoint = "";
     if (props.selectedProfiles === "SP") {
-      apiEndPoint = `https://18.207.111.239/Ads/SPCampaignManager/${props.tabName}`;
+      apiEndPoint = `https://finnapi.sellingpartnerservices.com/Ads/SPCampaignManager/${props.tabName}`;
     } else if (props.selectedProfiles === "SB") {
-      apiEndPoint = `https://18.207.111.239/Ads/SBCampaignManager/${props.tabName}`;
+      apiEndPoint = `https://finnapi.sellingpartnerservices.com/Ads/SBCampaignManager/${props.tabName}`;
     } else if (props.selectedProfiles === "SD") {
-      apiEndPoint = `https://18.207.111.239/Ads/SDCampaignManager/${props.tabName}`;
+      apiEndPoint = `https://finnapi.sellingpartnerservices.com/Ads/SDCampaignManager/${props.tabName}`;
     }
 
     const userToken = localStorage.getItem("userToken");
@@ -221,13 +221,13 @@ function TargetingTable(props) {
       let apiEndPoint = "";
       switch (props.selectedProfiles) {
         case "SP":
-          apiEndPoint = `https://18.207.111.239/Ads/SPCampaignManager/${props.tabName}/Export`;
+          apiEndPoint = `https://finnapi.sellingpartnerservices.com/Ads/SPCampaignManager/${props.tabName}/Export`;
           break;
         case "SB":
-          apiEndPoint = `https://18.207.111.239/Ads/SBCampaignManager/${props.tabName}/Export`;
+          apiEndPoint = `https://finnapi.sellingpartnerservices.com/Ads/SBCampaignManager/${props.tabName}/Export`;
           break;
         case "SD":
-          apiEndPoint = `https://18.207.111.239/Ads/SDCampaignManager/${props.tabName}/Export`;
+          apiEndPoint = `https://finnapi.sellingpartnerservices.com/Ads/SDCampaignManager/${props.tabName}/Export`;
           break;
       }
 

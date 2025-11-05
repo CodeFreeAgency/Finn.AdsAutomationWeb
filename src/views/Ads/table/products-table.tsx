@@ -75,9 +75,9 @@ function ProductsTable(props) {
 
     let apiEndPoint = "";
     if (props.selectedProfiles === "SP") {
-      apiEndPoint = `https://18.207.111.239/Ads/SPCampaignManager/${props.tabName}`;
+      apiEndPoint = `https://finnapi.sellingpartnerservices.com/Ads/SPCampaignManager/${props.tabName}`;
     } else if (props.selectedProfiles === "SD") {
-      apiEndPoint = `https://18.207.111.239/Ads/SDCampaignManager/${props.tabName}`;
+      apiEndPoint = `https://finnapi.sellingpartnerservices.com/Ads/SDCampaignManager/${props.tabName}`;
     } else {
       // Skip SB
       setApiLoading(false);
@@ -222,9 +222,9 @@ function ProductsTable(props) {
 
       let apiEndPoint = "";
       if (props.selectedProfiles === "SP") {
-        apiEndPoint = `https://18.207.111.239/Ads/SPCampaignManager/${props.tabName}/Export`;
+        apiEndPoint = `https://finnapi.sellingpartnerservices.com/Ads/SPCampaignManager/${props.tabName}/Export`;
       } else if (props.selectedProfiles === "SD") {
-        apiEndPoint = `https://18.207.111.239/Ads/SDCampaignManager/${props.tabName}/Export`;
+        apiEndPoint = `https://finnapi.sellingpartnerservices.com/Ads/SDCampaignManager/${props.tabName}/Export`;
       } else {
         setSpinner(false);
         return;
