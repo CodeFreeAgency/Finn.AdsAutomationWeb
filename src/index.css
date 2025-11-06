@@ -177,7 +177,7 @@ a.btn:hover {
 }
 
 .btn .btn-link .add-more-btn:hover {
-  background-color: white !important;
+  background-color: grey !important;
 }
 
 .navbar-light {

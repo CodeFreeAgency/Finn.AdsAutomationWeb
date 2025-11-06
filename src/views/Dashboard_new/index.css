@@ -1,46 +1,350 @@
-.finn-search-box {
+/* Main wrapper */
+.finngpt-wrapper {
+  height: calc(100vh - 60px);
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  flex-direction: column;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
 }
 
-.search-input {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  padding: 12px;
-  resize: none;
-  min-height: 120px;
-  max-height: 250px;
-  overflow-y: auto;
+/* Header with FinnGPT title */
+.finngpt-header {
+  position: fixed;
+  top: 20px;
+  left: 90px;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: left 0.3s ease;
 }
 
-.search-btn {
-  min-width: 120px;
-  height: 45px;
-  font-size: 15px;
+
+.finngpt-title {
+  font-size: 18px;
   font-weight: 500;
-  border-radius: 8px;
-  white-space: nowrap;
+  color: #2d2d2d;
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-/* Scrollable results container */
-.finn-results-container {
-  border: 1px solid #e5e5e5;
-  border-radius: 10px;
-  background: #fff;
-  max-height: 400px;
-  overflow-y: auto; /* ✅ scrollable for long responses */
-  padding: 16px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+/* Main content area */
+.finngpt-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.result-text {
-  white-space: pre-wrap;
+/* Initial centered view */
+.finngpt-initial-view {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.finngpt-welcome-text {
+  font-size: 28px;
+  font-weight: 400;
+  color: #2d2d2d;
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+}
+
+/* Centered input (shown only initially) */
+.finngpt-centered-input {
+  width: 100%;
+  max-width: 700px;
+
+}
+
+/* Messages container - scrollable */
+.finngpt-messages-container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 10px 0;
+}
+
+/* Message pair (user + assistant) */
+.finngpt-message-pair {
+  width: 100%;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Message rows */
+.finngpt-user-row,
+.finngpt-assistant-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 16px 24px;
+}
+
+/*  USER MESSAGE RIGHT SIDE */
+.finngpt-user-row {
+  background-color: #ffffff;
+}
+
+/* ASSISTANT MESSAGE LEFT SIDE */
+.finngpt-assistant-row {
+  background-color: #ffffff;
+}
+
+/* Message content wrapper */
+.finngpt-message-content {
+  max-width: 700px;
+  width: 100%;
+}
+
+/* User message bubble (right) */
+.finngpt-user-message {
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+  padding: 10px 14px;
+  border-radius: 16px 16px 0 16px;
+  background-color: #d4d4d4;
+  font-family: "Plus Jakarta Sans", sans-serif;
   word-wrap: break-word;
+  white-space: pre-wrap;
+  width: 50%;
+  margin-left: auto;
+}
+
+/* Assistant message bubble (left) */
+.finngpt-assistant-message {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #2d2d2d;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 10px 14px;
+  border-radius: 16px 16px 16px 0;
+  background-color: #f0f0f0;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+/* JSON result styling */
+.finngpt-json-result {
+   white-space: pre;
+  overflow-x: auto;
+  word-break: keep-all;
+  max-width: 100%;
+  padding: 12px;
+  margin: 0;
   font-family: "Courier New", monospace;
+}
+.chatgpt-response {
+  background-color: #f7f7f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 100%; /* same width as input */
   font-size: 14px;
-  line-height: 1.5;
-  color: #333;
+  color: #202123;
+  line-height: 1.6;
+}
+
+/* Copy button above response */
+.finngpt-copy-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 8px;
+  margin-bottom: 4px;
+}
+
+.finngpt-copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #7a7a7a;
+  transition: color 0.2s ease;
+}
+
+.finngpt-copy-btn:hover {
+  color: #000;
+}
+
+.finngpt-copied {
+  color: #4caf50;
+}
+
+/* Loading state */
+.finngpt-loading {
+  color: #6b6b6b;
+  font-style: italic;
+}
+
+/* Input container - fixed at bottom */
+.finngpt-input-container {
+  position: fixed;
+  bottom: 0;
+  left: 70px;
+  right: 0;
+  border-radius: 12px;
+  padding: 12px 0px 12px 30px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.finngpt-input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 12px 42px 12px 16px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.finngpt-input-wrapper:focus-within {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+   border-color: #b0b0b0;
+}
+
+/* Input textarea */
+.finngpt-input {
+    border: none !important;
+  background-color: transparent !important;
+  resize: none;
+  outline: none !important;
+  font-size: 15px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #2d2d2d;
+  line-height: 24px;
+  height: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finngpt-input::placeholder {
+  color: #8e8e8e;
+}
+
+/* Send button */
+.finngpt-send-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #2d2d2d;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding: 0;
+}
+
+.finngpt-send-btn:hover:not(:disabled) {
+  background-color: #000000;
+}
+
+.finngpt-send-btn:disabled {
+  background-color: #d1d1d1;
+  cursor: not-allowed;
+}
+
+.finngpt-send-btn svg {
+  width: 18px;
+  height: 18px;
+  color: white;
+}
+
+/* Scrollbar styling */
+.finngpt-messages-container::-webkit-scrollbar {
+  width: 8px;
+}
+.finngpt-messages-container::-webkit-scrollbar-thumb {
+  background: #d1d1d1;
+  border-radius: 4px;
+}
+.finngpt-messages-container::-webkit-scrollbar-thumb:hover {
+  background: #b1b1b1;
+}
+
+/* Input scrollbar */
+.finngpt-input::-webkit-scrollbar {
+  width: 6px;
+}
+.finngpt-input::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+.finngpt-input::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* JSON scrollbar */
+.finngpt-json-result::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.finngpt-json-result::-webkit-scrollbar-thumb {
+  background: #5a5a5a;
+  border-radius: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .finngpt-welcome-text {
+    font-size: 22px;
+    padding: 0 20px;
+  }
+
+  .finngpt-input-container {
+    left: 0;
+    padding: 16px;
+  }
+
+  .finngpt-messages-container {
+    padding-top: 60px;
+  }
+
+  .finngpt-user-row,
+  .finngpt-assistant-row {
+    padding: 12px 16px;
+  }
+
+  .finngpt-header {
+    top: 16px;
+    left: 16px;
+  }
+}
+
+/* For layouts without sidebar */
+body:not(.dashboard-layout) .finngpt-input-container {
+  left: 0;
+}
+
+/* Animation for new messages */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -81,7 +81,7 @@ export const App = () => {
           element={<Dashboard searchResult={searchResult} />}
         />
 
-        <Route path="dashboard-new" element={<DashboardNew/>}/>
+        <Route path="/dashboard-new" element={<DashboardNew/>}/>
 
         <Route
           path="/ads/ads-compaign-manager"

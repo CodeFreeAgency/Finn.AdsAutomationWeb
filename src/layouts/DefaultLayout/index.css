@@ -163,7 +163,7 @@ main {
 
 .btn-primary:hover {
   border-radius: 4px !important;
-  background: white !important;
+  background:grey !important;
   height: 50px !important;
   color: black !important;
   padding: 8px 16px;

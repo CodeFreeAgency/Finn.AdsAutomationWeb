@@ -135,7 +135,7 @@ class SignIn extends Component<{}, FormState> {
       localStorage.setItem("email", email);
       localStorage.setItem("userToken", responseData.result.accessToken);
       this.setState({
-        redirect: "/ads/ads-compaign-manager",
+        redirect: "/dashboard-new",
         loading: false,
       });
     } catch (error) {
