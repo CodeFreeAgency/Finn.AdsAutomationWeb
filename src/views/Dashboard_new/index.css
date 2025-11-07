@@ -46,6 +46,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 40px;
+  margin-bottom: 200px;
 }
 
 .finngpt-welcome-text {
@@ -97,6 +98,7 @@
 /* ASSISTANT MESSAGE LEFT SIDE */
 .finngpt-assistant-row {
   background-color: #ffffff;
+  margin-bottom: 20px;  
 }
 
 /* Message content wrapper */
@@ -347,4 +349,24 @@ body:not(.dashboard-layout) .finngpt-input-container {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.finngpt-analysing {
+  position: absolute;
+  top: -28px;    /* moves text slightly above input */
+  left: 10px;    /* aligns with input padding */
+  font-size: 13px;
+  color: #555;
+  opacity: 0.9;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  animation: fadeInOut 1.5s infinite;
+
+}
+
+
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
 }
