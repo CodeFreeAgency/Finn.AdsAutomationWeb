@@ -5,47 +5,5 @@
     "icon": "dashboard-icon",
     "active": "dashboard",
     "hasSubMenu": false
-  },
-  {
-    "name": "Ads",
-    "to": "#",
-    "icon": "ads-status-icon",
-    "active": "ads",
-    "hasSubMenu": true,
-    "submenuList": [
-      {
-        "name": "Campaign Manager",
-        "to": "/ads/ads-compaign-manager",
-        "active": "ads-compaign-manager",
-        "parent": "ads"
-      }
-    ]
-  },
-  {
-    "name": "Reports",
-    "to": "#",
-    "icon": "resources-icon",
-    "active": "reports",
-    "hasSubMenu": true,
-    "submenuList": [
-      {
-        "name": "Sales and Traffic",
-        "to": "/reports/sales",
-        "active": "sales",
-        "parent": "reports"
-      },
-        {
-        "name": "Search Catalog",
-        "to": "/reports/sales",
-        "active": "sales",
-        "parent": "reports"
-      },
-        {
-        "name": "Search Query",
-        "to": "/reports/sales",
-        "active": "sales",
-        "parent": "reports"
-      }
-    ]
   }
 ]

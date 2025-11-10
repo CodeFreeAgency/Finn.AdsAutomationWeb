@@ -112,7 +112,7 @@ const DashboardNew = () => {
                     ref={textareaRef}
                     as="textarea"
                     rows={1}
-                    placeholder="Ask anything..."
+                    placeholder="Ask anything about your sales..."
                     value={searchText}
                     onChange={handleTextareaChange}
                     onKeyPress={handleKeyPress}
@@ -226,7 +226,7 @@ const DashboardNew = () => {
                     ref={textareaRef}
                     as="textarea"
                     rows={1}
-                    placeholder="Ask anything..."
+                    placeholder="Ask anything about your sales..."
                     value={searchText}
                     onChange={handleTextareaChange}
                     onKeyPress={handleKeyPress}

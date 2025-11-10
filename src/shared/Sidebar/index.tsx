@@ -34,7 +34,7 @@ const Sidebar = () => {
         <nav>
           <ul className="menus">
             {menuItems.map((menu, index) => {
-              const submenuList = menu.submenuList || [];
+              const submenuList = (menu as any).submenuList || [];
               const isActive = splitLocation[1] === menu.active;
               const isSubmenuOpen = openSubMenu === index;
 
